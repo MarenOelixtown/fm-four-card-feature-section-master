@@ -52,5 +52,42 @@ body {
 }
 main {
   background-color: var(--background-color);
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features {
+  width: 85vw;
+  text-align: center;
+  margin: 5rem 0;
+}
+.features__grid {
+  display: grid;
+  row-gap: 2rem;
+}
+.features__item {
+  text-align: left;
+  border: 1px solid black;
+  padding: 1.5rem;
+}
+.features__title-description {
+  color: var(--primary-font-color);
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.features__title {
+  color: var(--primary-font-color);
+  font-weight: 600;
+}
+.features__description {
+  padding: 1rem 1rem 5rem 1rem;
+}
+.features__item-title {
+  color: var(--primary-font-color);
+  font-weight: 600;
+  font-size: 1.35rem;
+}
+.features__item-description {
+  font-size: 0.875rem;
+  line-height: 1.8;
 }
