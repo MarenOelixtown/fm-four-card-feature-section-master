@@ -31,16 +31,16 @@
 }
 .features__title-description {
   color: var(--primary-font-color);
-  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.2rem);
   font-weight: 200;
 }
 .features__title {
   color: var(--primary-font-color);
-  font-size: clamp(1rem, 2vw + 1rem, 2rem);
+  font-size: clamp(1rem, 2vw + 1rem, 2.2rem);
   font-weight: 600;
 }
 .features__description {
-  padding: 1rem 1rem 5rem 1rem;
+  padding: 1rem 1rem 4rem 1rem;
 }
 .features__item-title {
   color: var(--primary-font-color);
