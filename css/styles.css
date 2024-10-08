@@ -68,8 +68,22 @@ main {
 }
 .features__item {
   text-align: left;
-  border: 1px solid black;
+  box-shadow: 0px 10px 51px -23px rgba(76, 78, 97, 0.62);
+  border-top: 0.3rem solid;
+  border-radius: 0.6rem;
   padding: 1.5rem;
+}
+.features__item:nth-child(1) {
+  border-color: var(--cyan);
+}
+.features__item:nth-child(2) {
+  border-color: var(--red);
+}
+.features__item:nth-child(3) {
+  border-color: var(--orange);
+}
+.features__item:nth-child(4) {
+  border-color: var(--blue);
 }
 .features__title-description {
   color: var(--primary-font-color);
