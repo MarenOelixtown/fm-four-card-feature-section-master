@@ -1,0 +1,104 @@
+@import "global.css";
+
+.features {
+  width: 85vw;
+  text-align: center;
+  margin: 5rem 0;
+}
+.features__grid {
+  display: grid;
+  gap: 2rem;
+  list-style: none;
+}
+.features__item {
+  text-align: left;
+  box-shadow: 0px 10px 51px -23px rgba(76, 78, 97, 0.62);
+  border-top: 0.3rem solid;
+  border-radius: 0.6rem;
+  padding: 2rem;
+}
+.features__item:nth-child(1) {
+  border-color: var(--cyan);
+}
+.features__item:nth-child(2) {
+  border-color: var(--red);
+}
+.features__item:nth-child(3) {
+  border-color: var(--orange);
+}
+.features__item:nth-child(4) {
+  border-color: var(--blue);
+}
+.features__title-description {
+  color: var(--primary-font-color);
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+  font-weight: 200;
+}
+.features__title {
+  color: var(--primary-font-color);
+  font-size: clamp(1rem, 2vw + 1rem, 2rem);
+  font-weight: 600;
+}
+.features__description {
+  padding: 1rem 1rem 5rem 1rem;
+}
+.features__item-title {
+  color: var(--primary-font-color);
+  font-weight: 600;
+  font-size: 1.35rem;
+}
+.features__item-description {
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+.features__item-img {
+  text-align: right;
+  margin-top: 2rem;
+}
+.features__item-img-text--sr-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (min-width: 48rem) {
+  .features__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (min-width: 75rem) {
+  .features {
+    max-width: 60vw;
+  }
+  .features__description {
+    display: inline-block;
+    max-width: 35vw;
+  }
+  .features__grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .features__item {
+    grid-row-end: span 2;
+  }
+  .features__item:nth-child(1) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  .features__item:nth-child(2) {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  .features__item:nth-child(3) {
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+  .features__item:nth-child(4) {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+}

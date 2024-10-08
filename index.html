@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -16,77 +15,81 @@
 
     <meta
       name="description"
-      content=" My frontend mentor task with a feature section - feel free to have a look."
+      content=" My frontend mentor task, styling a responsive feature section - feel free to have a look."
     />
-
-    <!-- <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style> -->
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <main>
-      <section>
-        <p>Reliable, efficient delivery</p>
-        <h2>Powered by Technology Our Artificial</h2>
-        <p>
-          Intelligence powered tools use millions of project data points to
-          ensure that your project is successful
+      <section class="features">
+        <p class="features__title-description">Reliable, efficient delivery</p>
+        <!-- I did not use h1 because I assume that this is not the landing page in a real project. -->
+        <h2 class="features__title">Powered by Technology</h2>
+        <p class="features__description">
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
         </p>
-        <article>
-          <h3>Supervisor</h3>
-          <p>Monitors activity to identify project roadblocks</p>
-          <figure>
-            <img
-              src="/images/icon-supervisor.svg"
-              alt="Icon magnifying glass"
-            />
-            <figcaption>Magnifying Glass with eye in the middle</figcaption>
-          </figure>
-        </article>
-        <article>
-          <h3>Team Builder</h3>
-          <p>
-            Scans our talent network to create the optimal team for your project
-          </p>
-          <figure>
-            <img src="/images/icon-team-builder.svg" alt="Icon team builder" />
-            <figcaption>Website with house in foreground</figcaption>
-          </figure>
-        </article>
-        <article>
-          <h3>Karma</h3>
-          <p>Regularly evaluates our talent to ensure quality</p>
-          <figure>
-            <img src="/images/icon-karma.svg" alt="Icon karma" />
-            <figcaption>Luminous light bulb</figcaption>
-          </figure>
-        </article>
-        <article>
-          <h3>Calculator</h3>
-          <p>
-            Uses data from past projects to provide better delivery estimates
-          </p>
-          <figure>
-            <img src="/images/icon-calculator.svg" alt="Icon calculator" />
-            <figcaption>Screen with blue circle</figcaption>
-          </figure>
-        </article>
+        <ul class="features__grid">
+          <li class="features__item">
+            <h3 class="features__item-title">Supervisor</h3>
+            <p class="features__item-description">
+              Monitors activity to identify project roadblocks
+            </p>
+            <figure class="features__item-img">
+              <img
+                src="assets/images/icon-supervisor.svg"
+                alt="Icon magnifying glass"
+              />
+              <figcaption class="features__item-img-text--sr-only">
+                Magnifying Glass with eye in the middle
+              </figcaption>
+            </figure>
+          </li>
+          <li class="features__item">
+            <h3 class="features__item-title">Team Builder</h3>
+            <p class="features__item-description">
+              Scans our talent network to create the optimal team for your
+              project
+            </p>
+            <figure class="features__item-img">
+              <img
+                src="assets/images/icon-team-builder.svg"
+                alt="Icon team builder"
+              />
+              <figcaption class="features__item-img-text--sr-only">
+                Website with house in foreground
+              </figcaption>
+            </figure>
+          </li>
+          <li class="features__item">
+            <h3 class="features__item-title">Karma</h3>
+            <p class="features__item-description">
+              Regularly evaluates our talent to ensure quality
+            </p>
+            <figure class="features__item-img">
+              <img src="assets/images/icon-karma.svg" alt="Icon karma" />
+              <figcaption class="features__item-img-text--sr-only">
+                Luminous light bulb
+              </figcaption>
+            </figure>
+          </li>
+          <li class="features__item">
+            <h3 class="features__item-title">Calculator</h3>
+            <p class="features__item-description">
+              Uses data from past projects to provide better delivery estimates
+            </p>
+            <figure class="features__item-img">
+              <img
+                src="assets/images/icon-calculator.svg"
+                alt="Icon calculator"
+              />
+              <figcaption class="features__item-img-text--sr-only">
+                Screen with blue circle
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
       </section>
     </main>
-
-    <!-- <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer> -->
   </body>
 </html>
