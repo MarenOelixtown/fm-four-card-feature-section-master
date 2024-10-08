@@ -72,7 +72,7 @@
 }
 @media (min-width: 75rem) {
   .features {
-    max-width: 60vw;
+    max-width: 70vw;
   }
   .features__description {
     display: inline-block;
