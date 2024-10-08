@@ -64,6 +64,7 @@ main {
 .features__grid {
   display: grid;
   row-gap: 2rem;
+  list-style: none;
 }
 .features__item {
   text-align: left;
